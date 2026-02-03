@@ -26,7 +26,7 @@
 %----------------------------------------------------------------------------------------
 
 % article class because we want to fully customize the page and not use a cv template
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper, 10pt]{article}
 
 %----------------------------------------------------------------------------------------
 %	FONT
@@ -54,7 +54,15 @@
 \RequirePackage{color}
 \RequirePackage{graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[scale=0.9]{geometry}
+\usepackage[
+    ignoreheadfoot, % set margins without considering header and footer
+    top=1.27 cm, % seperation between body and page edge from the top
+    bottom=1.27 cm, % seperation between body and page edge from the bottom
+    left=1.27 cm, % seperation between body and page edge from the left
+    right=1.27 cm, % seperation between body and page edge from the right
+    footskip=0.5 cm, % seperation between body and footer
+    % showframe % for debugging 
+]{geometry} % for adjusting page geometry
 
 %tabularx environment
 \usepackage{tabularx}
@@ -79,7 +87,7 @@
 %CV Sections inspired by: 
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{10pt}{10pt}
+\titlespacing{\section}{0pt}{3pt}{3pt}
 
 %for publications
 \usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
@@ -96,6 +104,16 @@
 
 %debug page outer frames
 %\usepackage{showframe}
+
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.02 cm,
+        parsep=0.02 cm,
+        partopsep=0.02 cm
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights
 
 
 % job listing environments
@@ -142,76 +160,115 @@
 % \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Your Name} \\[7.5pt]
-\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
-\href{https://linkedin.com/in/username}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
-\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
-\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ email@mysite.com} \ $|$ \ 
-\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
-\end{tabularx}
-
-%----------------------------------------------------------------------------------------
-% EXPERIENCE SECTIONS
-%----------------------------------------------------------------------------------------
-
-%Interests/ Keywords/ Summary
-\section{Summary}
-This CV can also be automatically compiled and published using GitHub Actions. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
-
-%Experience
-\section{Work Experience}
-
-\begin{jobshort}{Designation}{Jan 2021 - present}
-long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
-\end{jobshort}
-
-
-\begin{joblong}{Designation}{Mar 2019 - Jan 2021}
-\item long long line of blah blah that will wrap when the table fills the column width
-\item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
-\end{joblong}
-  
-%Projects
-\section{Projects}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
+\textbf{\fontsize{18 pt}{18 pt}\selectfont John Jerome C. Pardo} \\
+\vspace{0.05 cm}
+\href{https://github.com/Par-python}{\color{black}\raisebox{-0.05\height}\faGithub\ Par-python}\ \ $|$ \ 
+\href{https://linkedin.com/in/jjpardos}{\color{black}\raisebox{-0.05\height}\faLinkedin\ jjpardos} \ $|$ \ 
+% \href{https://alexi.life}{\color{black}\raisebox{-0.05\height}\faGlobe\ my.site} \ $|$ \ 
+\href{mailto:johnjerome.pardo@gmail.com}{\color{black}\raisebox{-0.05\height}\faEnvelope\ johnjerome.pardo@gmail.com} \ $|$ \ 
+\href{tel:+639695666410}{\color{black}\raisebox{-0.05\height}\faMobile\ 0969 566 6410} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
 
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
-
-2022 & Class 12th Some Board \hfill  (Grades) \\
-
-2021 & Class 10th Some Board \hfill  (Grades) \\
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Ateneo de Manila University} & \hfill Expected May 2028 \\ [1pt]
+\multicolumn{2}{@{}X@{}}{
+    Bachelor's of Science in Computer Science
+}
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
-%	PUBLICATIONS
+%	EXPERIENCE
 %----------------------------------------------------------------------------------------
-\section{Publications}
-\begin{refsection}[citations.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
+\section{Experience}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Lead Developer and Full-Stack Developer} & \hfill May 2025 – Present \\ [1pt]
+\multicolumn{2}{@{}X@{}}{
+    \textit{One Big Match}
+    \begin{highlights}
+        \item Led and supervised the a team of 3 developers and designers, managing task distribution, timelines, and project milestones
+        \item Architected and implemented full stack solutions across front-end and back-end systems to ensure scalability and performance
+        \item Collaborated with a 7-person marketing team to align technical implementation with branding strategy, user engagement goals, and product launch timelines
+    \end{highlights}
+}
+\end{tabularx}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Web Development Deputy} & \hfill Dec 2025 – Present \\ [1pt]
+\multicolumn{2}{@{}X@{}}{
+    \textit{TEDxAteneoDeManilaU}
+    \begin{highlights}
+        \item Designed and developed an intuitive, theme-driven website that clearly communicated the event’s purpose and talk concepts through engaging visuals and smooth interactions
+        \item Improved user experience by organizing content so that 90\% of essential event information was accessible within the first section of the site
+        \item Reduced friction in the registration process by simplifying form flows and navigation, decreasing the registration process to 3 clicks
+    \end{highlights}
+}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Web Developer} & \hfill June 2025 – August 2025 \\ [1pt]
+\multicolumn{2}{@{}X@{}}{
+    \textit{ORSEM Sigla 2025}
+    \begin{highlights}
+        \item  Improved page load speed by 40\% by optimizing images, removing unused JavaScript, and refactoring heavy React components
+        \item Resolved layout shift issues to create smoother visual rendering and better user interaction
+        \item Increased Lighthouse performance scores into the high 80s–90s range through front-end performance best practices
+    \end{highlights}
+}
+\end{tabularx}
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+\section{Projects}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Project Sinag} & \hfill Feb 2025 \\ [1pt]
+\multicolumn{2}{@{}X@{}}{
+    \textit{Team Project}
+    \begin{highlights}
+        \item Developed a web-based crowdsourcing platform for real-time disaster reporting, improving situational awareness and response by enabling users to submit incident reports in 1 streamlined form, reducing reporting time and simplifying community engagement
+    \end{highlights}
+}
+\end{tabularx}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{OCRapidNotes} & \hfill Dec 2023 – April 2024 \\ [1pt]
+\multicolumn{2}{@{}X@{}}{
+    \textit{Team Project}
+    \begin{highlights}
+        \item Built an integrated OCR tool that combined the functionality of 2 separate apps into 1, using Tesseract, Google Vision API, PaddleOCR, and GPT for post-processing to extract and structure text from images, handwritten notes, and presentations with high accuracy, speed, and reliability for educational content
+    \end{highlights}
+}
+\end{tabularx}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{TEDxADMU Website} & \hfill Mar 2025 – Apr 2025 \\ [1pt]
+\multicolumn{2}{@{}X@{}}{
+    \textit{Team Project}
+    \begin{highlights}
+        \item Collaborated with a team to create the TEDxAteneoDeManilaU 2025 website using Next.js, Supabase, and Vercel, driving 1,000+ visits and supporting 150+ registrations
+    \end{highlights}
+}
+\end{tabularx}
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \textbf{On} & \hfill Aug 2024 – Present \\ [1pt]
+% \multicolumn{2}{@{}X@{}}{
+%     \textit{Personal Project}
+%     \begin{highlights}
+%         \item Built automated QPI computation tool with program-based course autofill, generating 9,600+ sessions and 131,000+ interactions, ranking number 2 on Google for "QPI calculator"
+%     \end{highlights}
+% }
+% \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
+Languages and Frameworks: &  \normalsize{JavaScript (ES6+), TypeScript, Python, HTML, CSS}\\
+Libraries and Tools: &  \normalsize{React, Next.js, Node.js, PostgreSQL, Supabase, TailwindCSS, Git, Vercel}\\
 \end{tabularx}
-
-\vfill
-\center{\footnotesize Last updated: \today}
 
 \end{document}
