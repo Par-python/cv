@@ -238,8 +238,8 @@ Libraries and Tools: &  \normalsize{React, Next.js, Node.js, PostgreSQL, Supabas
 \multicolumn{2}{@{}X@{}}{
     \textit{Personal Project}
     \begin{highlights}
-        \item Built a 15k-line Python/PySide6 telemetry dashboard unifying 6 racing data sources (ACC, iRacing, rFactor 2, LMU, AC, and real cars via ELM327/OBD-II) behind a single reader abstraction, with a math channel engine, custom formula parser, corner detector, and trail-brake analyzer for real-time coaching insights.
-        \item Shipped end-to-end as a signed Windows installer with auto-update across 219 commits, covering protocol-level readers, a 10-tab PySide6 UI, and a self-building track map for 25+ circuits.
+        \item Designed a unified reader abstraction over 6 vehicle data sources, integrating 5 real-time sim telemetry protocols (shared memory, UDP) and ELM327/OBD-II to stream and normalize 40+ channels at 60 Hz.
+        \item Built a real-time analytics layer (math channel engine with custom formula parser, corner detector, trail-brake analyzer) producing sub-second coaching insights, shipped to users as a signed Windows installer with auto-update.
     \end{highlights}
 }
 \end{tabularx}
@@ -259,11 +259,10 @@ Libraries and Tools: &  \normalsize{React, Next.js, Node.js, PostgreSQL, Supabas
     \textit{Personal Project; 110 downloads, 8 stars on crates.io}
     \begin{highlights}
         \item Built a parallel disk scanner in Rust on the \texttt{ignore} walker with a 4-stage dupe pipeline (size → inode → partial/full BLAKE3) and a persistent hash cache, taking warm re-scans from 0.45s to 0.011s.
-        \item Shipped a 4-subcommand CLI and a \texttt{ratatui} TUI with filter, trash-by-default delete, and dupes-for-subtree across crates.io and prebuilt Linux/macOS/Windows binaries.
+        \item Shipped a 4-subcommand CLI and a \texttt{ratatui} TUI with filter, trash-by-default delete, and dupes-for-subtree, distributed as prebuilt Linux/macOS/Windows binaries.
     \end{highlights}
 }
 \end{tabularx}
-
 % \begin{tabularx}{\linewidth}{ @{}l r@{} }
 % \textbf{On} & \hfill Aug 2024 – Present \\ [1pt]
 % \multicolumn{2}{@{}X@{}}{
