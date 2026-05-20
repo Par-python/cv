@@ -233,22 +233,13 @@ Libraries and Tools: &  \normalsize{React, Next.js, Node.js, PostgreSQL, Supabas
 %	PROJECTS
 %----------------------------------------------------------------------------------------
 \section{Projects}
-
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Project Sinag} & \hfill Feb 2025 \\ [1pt]
+\textbf{S1napse} & \hfill Nov 2025 - May 2026 \\ [1pt]
 \multicolumn{2}{@{}X@{}}{
-    \textit{Team Project}
+    \textit{Personal Project}
     \begin{highlights}
-        \item Developed a web-based crowdsourcing platform for real-time disaster reporting, improving situational awareness and response by enabling users to submit incident reports in 1 streamlined form, reducing reporting time and simplifying community engagement
-    \end{highlights}
-}
-\end{tabularx}
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{OCRapidNotes} & \hfill Dec 2023 – April 2024 \\ [1pt]
-\multicolumn{2}{@{}X@{}}{
-    \textit{Team Project}
-    \begin{highlights}
-        \item Built an integrated OCR tool that combined the functionality of 2 separate apps into 1, using Tesseract, Google Vision API, PaddleOCR, and GPT for post-processing to extract and structure text from images, handwritten notes, and presentations with high accuracy, speed, and reliability for educational content
+        \item Built a 15k-line Python/PySide6 telemetry dashboard unifying 6 racing data sources (ACC, iRacing, rFactor 2, LMU, AC, and real cars via ELM327/OBD-II) behind a single reader abstraction, with a math channel engine, custom formula parser, corner detector, and trail-brake analyzer for real-time coaching insights.
+        \item Shipped end-to-end as a signed Windows installer with auto-update across 219 commits, covering protocol-level readers, a 10-tab PySide6 UI, and a self-building track map for 25+ circuits.
     \end{highlights}
 }
 \end{tabularx}
@@ -257,10 +248,22 @@ Libraries and Tools: &  \normalsize{React, Next.js, Node.js, PostgreSQL, Supabas
 \multicolumn{2}{@{}X@{}}{
     \textit{Team Project}
     \begin{highlights}
-        \item Architected an award-winning AI policy simulator that utilizes GraphRAG and custom transferability chains to turn speculative urban planning into evidence-based action, piloting 94 civic precedents for Quezon City.
+        \item Architected a podium-winning AI policy simulator at BlueHacks 2026, leveraging GraphRAG and custom transferability chains to transform speculative urban planning into evidence-based civic action.
+        \item Piloted 94 civic precedents for Quezon City, enabling data-driven policy decisions through retrieval-augmented reasoning over a curated knowledge graph.
     \end{highlights}
 }
 \end{tabularx}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{bigfiles} & \hfill May 2026 \\ [1pt]
+\multicolumn{2}{@{}X@{}}{
+    \textit{Personal Project; 110 downloads, 8 stars on crates.io}
+    \begin{highlights}
+        \item Built a parallel disk scanner in Rust on the \texttt{ignore} walker with a 4-stage dupe pipeline (size → inode → partial/full BLAKE3) and a persistent hash cache, taking warm re-scans from 0.45s to 0.011s.
+        \item Shipped a 4-subcommand CLI and a \texttt{ratatui} TUI with filter, trash-by-default delete, and dupes-for-subtree across crates.io and prebuilt Linux/macOS/Windows binaries.
+    \end{highlights}
+}
+\end{tabularx}
+
 % \begin{tabularx}{\linewidth}{ @{}l r@{} }
 % \textbf{On} & \hfill Aug 2024 – Present \\ [1pt]
 % \multicolumn{2}{@{}X@{}}{
