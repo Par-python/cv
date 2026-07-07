@@ -153,12 +153,6 @@
 %	TITLE
 %----------------------------------------------------------------------------------------
 
-% \begin{tabularx}{\linewidth}{ @{}X X@{} }
-% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
-% \raisebox{-0.05\height}\faGithub\ username \ | \
-% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
-% \end{tabularx}
-
 \begin{tabularx}{\linewidth}{@{} C @{}}
 \textbf{\fontsize{18 pt}{18 pt}\selectfont John Jerome C. Pardo} \\
 \vspace{0.05 cm}
@@ -182,50 +176,42 @@
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
-%	SKILLS
-%----------------------------------------------------------------------------------------
-\section{Skills}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-Languages and Frameworks: &  \normalsize{JavaScript (ES6+), TypeScript, Python, Java, Rust}\\
-Libraries and Tools: &  \normalsize{React, Next.js, Node.js, PostgreSQL, Supabase, TailwindCSS, Git, Vercel, Cloudflare}\\
-\end{tabularx}
-
-%----------------------------------------------------------------------------------------
 %	EXPERIENCE
 %----------------------------------------------------------------------------------------
 \section{Experience}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Lead Developer and Full-Stack Developer} & \hfill May 2025 – May 2026 \\ [1pt]
+\textbf{R\&D Data Engineer} & \hfill June 2026 – Present \\ [1pt]
 \multicolumn{2}{@{}X@{}}{
-    \textit{One Big Match}
+    \textit{Quartz Labs - London, United Kingdom}
     \begin{highlights}
-        \item Led and supervised the a team of 3 developers and designers, managing task distribution, timelines, and project milestones
-        \item Architected and implemented full stack solutions across front-end and back-end systems to ensure scalability and performance
-        \item Collaborated with a 7-person marketing team to align technical implementation with branding strategy, user engagement goals, and product launch timelines
+        \item Built the confirmation layer for a social-listening trend engine, replacing fixed \% growth thresholds with a per-entity permutation test that validates each candidate against its own historical noise, and verified it end-to-end on \textbf{2,200} live-scraped posts
+        \item Added a \textbf{Shannon-entropy }source-diversity check that suppressed single-account false positives after diagnosing from the codebase that author-diversity data was stored but never used in promotion decisions
+        \item Integrated a\textbf{ 5-platform} scraping pipeline across TikTok, Reddit, X, Instagram, and Google Trends, debugged live actor failures, and \textbf{cut scrape cost 65\% }by profiling per-platform spend
+        \item Ran the gate on real data where it confirmed a genuine rising trend and held flat, low-signal entities, isolating data density as the true constraint rather than the model
+    \end{highlights}
+}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Full-Stack Developer} & \hfill May 2025 – May 2026 \\ [1pt]
+\multicolumn{2}{@{}X@{}}{
+    \textit{One Big Match - Manila, Philippines}
+    \begin{highlights}
+        \item Led and supervised a team of \textbf{3 developers} and designers, managing task distribution, timelines, and project milestones
+        \item Architected and implemented full stack solutions across \textbf{front-end and back-end systems }to ensure scalability and performance
+        \item Collaborated with a\textbf{ 7-person marketing team }to align technical implementation with branding strategy, user engagement goals, and product launch timelines
     \end{highlights}
 }
 \end{tabularx}
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{Web Development Deputy} & \hfill Dec 2025 – April 2026 \\ [1pt]
 \multicolumn{2}{@{}X@{}}{
-    \textit{TEDxAteneoDeManilaU}
+    \textit{TEDxAteneoDeManilaU - Manila, Philippines}
     \begin{highlights}
-        \item Designed and developed an intuitive, theme-driven website that clearly communicated the event’s purpose and talk concepts through engaging visuals and smooth interactions
-        \item Improved user experience by organizing content so that 90\% of essential event information was accessible within the first section of the site
-        \item Reduced friction in the registration process by simplifying form flows and navigation, decreasing the registration process to 3 clicks
-    \end{highlights}
-}
-\end{tabularx}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Web Developer} & \hfill June 2025 – August 2025 \\ [1pt]
-\multicolumn{2}{@{}X@{}}{
-    \textit{ORSEM Sigla 2025}
-    \begin{highlights}
-        \item  Improved page load speed by 40\% by optimizing images, removing unused JavaScript, and refactoring heavy React components
-        \item Resolved layout shift issues to create smoother visual rendering and better user interaction
-        \item Increased Lighthouse performance scores into the high 80s–90s range through front-end performance best practices
+        \item Designed and developed an intuitive, theme-driven website that clearly communicated the event's purpose and talk concepts through engaging visuals and smooth interactions
+        \item Improved user experience by organizing content so that \textbf{90\% of essential event} information was accessible within the first section of the site
+        \item Reduced friction in the registration process by simplifying form flows and navigation, decreasing the registration process to \textbf{3 clicks}
     \end{highlights}
 }
 \end{tabularx}
@@ -244,33 +230,32 @@ Libraries and Tools: &  \normalsize{React, Next.js, Node.js, PostgreSQL, Supabas
 }
 \end{tabularx}
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Sim.ula} & \hfill March 2026 \\ [1pt]
+\textbf{entroscope} & \hfill May 2026 \\ [1pt]
 \multicolumn{2}{@{}X@{}}{
-    \textit{Team Project}
+    \textit{Personal Project; 1.3k downloads on PyPI}
     \begin{highlights}
-        \item Architected a podium-winning AI policy simulator at BlueHacks 2026, leveraging GraphRAG and custom transferability chains to transform speculative urban planning into evidence-based civic action.
-        \item Piloted 94 civic precedents for Quezon City, enabling data-driven policy decisions through retrieval-augmented reasoning over a curated knowledge graph.
+        \item Published an open-source entropy toolkit for time-series analysis, implementing 7 information-theoretic measures (Shannon, permutation, sample, approximate, spectral, differential, multiscale) behind one consistent \texttt{compute}/\texttt{rolling}/\texttt{delta} API over pandas and numpy.
+        \item Extracted the library from a trend-detection project where falling Shannon entropy of regional search interest served as an early signal, and hardened it with 14 test suites, CI, and headless-safe plotting.
     \end{highlights}
 }
 \end{tabularx}
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{bigfiles} & \hfill May 2026 \\ [1pt]
 \multicolumn{2}{@{}X@{}}{
-    \textit{Personal Project; 110 downloads, 8 stars on crates.io}
+    \textit{Personal Project; 136 downloads, 8 stars on crates.io}
     \begin{highlights}
         \item Built a parallel disk scanner in Rust on the \texttt{ignore} walker with a 4-stage dupe pipeline (size → inode → partial/full BLAKE3) and a persistent hash cache, taking warm re-scans from 0.45s to 0.011s.
         \item Shipped a 4-subcommand CLI and a \texttt{ratatui} TUI with filter, trash-by-default delete, and dupes-for-subtree, distributed as prebuilt Linux/macOS/Windows binaries.
     \end{highlights}
 }
 \end{tabularx}
-% \begin{tabularx}{\linewidth}{ @{}l r@{} }
-% \textbf{On} & \hfill Aug 2024 – Present \\ [1pt]
-% \multicolumn{2}{@{}X@{}}{
-%     \textit{Personal Project}
-%     \begin{highlights}
-%         \item Built automated QPI computation tool with program-based course autofill, generating 9,600+ sessions and 131,000+ interactions, ranking number 2 on Google for "QPI calculator"
-%     \end{highlights}
-% }
-% \end{tabularx}
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Languages and Frameworks: &  \normalsize{JavaScript (ES6+), TypeScript, Python, Java, Rust}\\
+Libraries and Tools: &  \normalsize{React, Next.js, Node.js, PostgreSQL, Drizzle ORM, Neon, Supabase, TailwindCSS, OpenAI/LLMs, Git, Vercel, Cloudflare}\\
+\end{tabularx}
 
 \end{document}
