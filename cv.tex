@@ -185,10 +185,9 @@
 \multicolumn{2}{@{}X@{}}{
     \textit{Quartz Labs - London, United Kingdom}
     \begin{highlights}
-        \item Built the confirmation layer for a social-listening trend engine, replacing fixed \% growth thresholds with a per-entity permutation test that validates each candidate against its own historical noise, and verified it end-to-end on \textbf{2,200} live-scraped posts
-        \item Added a \textbf{Shannon-entropy }source-diversity check that suppressed single-account false positives after diagnosing from the codebase that author-diversity data was stored but never used in promotion decisions
-        \item Integrated a\textbf{ 5-platform} scraping pipeline across TikTok, Reddit, X, Instagram, and Google Trends, debugged live actor failures, and \textbf{cut scrape cost 65\% }by profiling per-platform spend
-        \item Ran the gate on real data where it confirmed a genuine rising trend and held flat, low-signal entities, isolating data density as the true constraint rather than the model
+        \item Built the confirmation gate for a social-listening trend engine — permutation significance test, \textbf{Shannon-entropy} source diversity, and LLM specificity — over \textbf{86k} scraped posts and \textbf{17k} entities across \textbf{5} platforms
+        \item Designed a retrospective holdout framework measuring each check against 56-day forward outcomes, quantifying source diversity at a $\mathbf{1.65\times}$ predictive edge ($p<0.0001$, $n=760$) across 3 cutoffs and 2 clients
+        \item Rebalanced a \textbf{5-platform} scraping mix after tracing a monoculture to the query fan-out, lifting gate pass rate \textbf{2.7\% to 16\%}, and profiled per-actor billing to avert a \textbf{\$2,100} overspend
     \end{highlights}
 }
 \end{tabularx}
