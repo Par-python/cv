@@ -9,7 +9,7 @@
 %	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 %	copies of the Software, and to permit persons to whom the Software is
 %	furnished to do so, subject to the following conditions:
-%	
+%
 %	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 %	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 %	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -17,7 +17,7 @@
 %	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 %	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 %	THE SOFTWARE.
-%	
+%
 %
 %-----------------------------------------------------------------------------------------------------------------------------------------------%
 
@@ -48,7 +48,7 @@
 %	PACKAGES
 %----------------------------------------------------------------------------------------
 \usepackage{url}
-\usepackage{parskip} 	
+\usepackage{parskip}
 
 %other packages for formatting
 \RequirePackage{color}
@@ -61,7 +61,7 @@
     left=1.27 cm, % seperation between body and page edge from the left
     right=1.27 cm, % seperation between body and page edge from the right
     footskip=0.5 cm, % seperation between body and footer
-    % showframe % for debugging 
+    % showframe % for debugging
 ]{geometry} % for adjusting page geometry
 
 %tabularx environment
@@ -71,7 +71,7 @@
 \usepackage{enumitem}
 
 % centered version of 'X' col. type
-\newcolumntype{C}{>{\centering\arraybackslash}X} 
+\newcolumntype{C}{>{\centering\arraybackslash}X}
 
 %to prevent spillover of tabular into next pages
 \usepackage{supertabular}
@@ -80,11 +80,11 @@
 \setlength{\fullcollw}{0.47\textwidth}
 
 %custom \section
-\usepackage{titlesec}				
+\usepackage{titlesec}
 \usepackage{multicol}
 \usepackage{multirow}
 
-%CV Sections inspired by: 
+%CV Sections inspired by:
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt}
@@ -136,7 +136,7 @@
     }
     {
     \end{itemize}
-    \end{minipage}    
+    \end{minipage}
     }
 
 
@@ -147,7 +147,7 @@
 \begin{document}
 
 % non-numbered pages
-\pagestyle{empty} 
+\pagestyle{empty}
 
 %----------------------------------------------------------------------------------------
 %	TITLE
@@ -156,10 +156,10 @@
 \begin{tabularx}{\linewidth}{@{} C @{}}
 \textbf{\fontsize{18 pt}{18 pt}\selectfont John Jerome C. Pardo} \\
 \vspace{0.05 cm}
-\href{https://github.com/Par-python}{\color{black}\raisebox{-0.05\height}\faGithub\ Par-python}\ \ $|$ \ 
-\href{https://linkedin.com/in/jjpardos}{\color{black}\raisebox{-0.05\height}\faLinkedin\ jjpardos} \ $|$ \ 
-\href{https://jjpardo.com/}{\color{black}\raisebox{-0.05\height}\faGlobe\ jjpardo.com} \ $|$ \ 
-\href{mailto:johnjerome.pardo@gmail.com}{\color{black}\raisebox{-0.05\height}\faEnvelope\ johnjerome.pardo@gmail.com} \ $|$ \ 
+\href{https://github.com/Par-python}{\color{black}\raisebox{-0.05\height}\faGithub\ Par-python}\ \ $|$ \
+\href{https://linkedin.com/in/jjpardos}{\color{black}\raisebox{-0.05\height}\faLinkedin\ jjpardos} \ $|$ \
+\href{https://jjpardo.com/}{\color{black}\raisebox{-0.05\height}\faGlobe\ jjpardo.com} \ $|$ \
+\href{mailto:johnjerome.pardo@gmail.com}{\color{black}\raisebox{-0.05\height}\faEnvelope\ johnjerome.pardo@gmail.com} \ $|$ \
 \href{tel:+639695666410}{\color{black}\raisebox{-0.05\height}\faMobile\ 0969 566 6410} \\
 \end{tabularx}
 
@@ -185,9 +185,9 @@
 \multicolumn{2}{@{}X@{}}{
     \textit{Quartz Labs - London, United Kingdom}
     \begin{highlights}
-        \item Built the quality-control layer for a social-listening product that spots emerging consumer trends, filtering \textbf{86k} social posts and \textbf{17k} detected trends across \textbf{5} platforms down to the ones worth acting on
-        \item Designed a testing framework that measured how well each filter predicted what actually happened next, proving the strongest one identified trends that went on to grow \textbf{1.65x} faster, validated across 2 clients
-        \item Diagnosed and fixed a data-collection imbalance that was hiding real trends, increasing the volume of validated results by \textbf{6x}, and audited platform billing to prevent a \textbf{\$2,100} overspend
+        \item Helped clients focus only on consumer trends worth acting on by building a quality-control layer that narrowed \textbf{86k} social posts and \textbf{17k} detected trends across \textbf{5} platforms down to the strongest signals
+        \item Gave clients evidence they could trust the product's picks by showing its best filter flagged trends that went on to grow \textbf{1.65x} faster, validated across \textbf{2} clients
+        \item Uncovered real trends the system had been missing by fixing a data-collection imbalance, growing validated results \textbf{6x}, and stopped a \textbf{\$2,100} overspend by auditing platform billing
     \end{highlights}
 }
 \end{tabularx}
@@ -197,9 +197,9 @@
 \multicolumn{2}{@{}X@{}}{
     \textit{Swarm - Makati, Philippines}
     \begin{highlights}
-        \item Built a compliance knowledge graph across \textbf{7 frameworks} and \textbf{2,711 requirements}, each traceable to a byte offset in a hashed source
-        \item Cut equivalence scoring from \textbf{3.4M} candidate pairs to \textbf{6,406} using graph community detection, an infeasible step reduced to one hour
-        \item Produced \textbf{2,182 typed cross-framework links} with confidence and rationale, surfacing \textbf{87} relevant requirements where keyword search found \textbf{15}
+        \item Cut back-and-forth between the team and legal by building an internal tool that puts \textbf{2,700+} legal and policy requirements in one searchable place, each linked to its exact source
+        \item Made the tool practical to run by reducing a key processing step from \textbf{3.4M} comparisons to \textbf{6,406}, turning a job that couldn't run at all into one that finishes in about an hour
+        \item Helped the team find what actually applies to them, surfacing \textbf{87} relevant requirements where keyword search found \textbf{15}, backed by \textbf{2,100+} explained connections between related rules
     \end{highlights}
 }
 \end{tabularx}
@@ -209,12 +209,13 @@
 \multicolumn{2}{@{}X@{}}{
     \textit{TEDxAteneoDeManilaU - Manila, Philippines}
     \begin{highlights}
-        \item Designed and developed an intuitive, theme-driven website that clearly communicated the event's purpose and talk concepts through engaging visuals and smooth interactions
-        \item Improved user experience by organizing content so that \textbf{90\% of essential event} information was accessible within the first section of the site
-        \item Reduced friction in the registration process by simplifying form flows and navigation, decreasing the registration process to \textbf{3 clicks}
+        \item Gave attendees a clear sense of the event and its talks before they arrived by designing and building a theme-driven website with engaging visuals and smooth interactions
+        \item Made key details easy to find by putting \textbf{90\%} of essential event information in the site's first section
+        \item Made signing up easier by simplifying forms and navigation, bringing registration down to \textbf{3 clicks}
     \end{highlights}
 }
 \end{tabularx}
+
 %----------------------------------------------------------------------------------------
 %	PROJECTS
 %----------------------------------------------------------------------------------------
@@ -224,28 +225,28 @@
 \multicolumn{2}{@{}X@{}}{
     \textit{Personal Project}
     \begin{highlights}
-        \item Designed a unified reader abstraction over 6 vehicle data sources, integrating 5 real-time sim telemetry protocols (shared memory, UDP) and ELM327/OBD-II to stream and normalize 40+ channels at 60 Hz.
-        \item Built a real-time analytics layer (math channel engine with custom formula parser, corner detector, trail-brake analyzer) producing sub-second coaching insights, shipped to users as a signed Windows installer with auto-update.
+        \item Built a desktop app that turns live racing-sim and real-car data into driving feedback, combining \textbf{6} data sources into one view of \textbf{40+} live readings updated \textbf{60} times per second
+        \item Gave drivers coaching tips within a second of each corner, such as braking and cornering analysis, and shipped it as a signed Windows installer that updates itself
     \end{highlights}
 }
 \end{tabularx}
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{entroscope} & \hfill May 2026 \\ [1pt]
 \multicolumn{2}{@{}X@{}}{
-    \textit{Personal Project; 1.3k downloads on PyPI}
+    \textit{Personal Project; 2.8k downloads, 18 stars on PyPI}
     \begin{highlights}
-        \item Published an open-source entropy toolkit for time-series analysis, implementing 7 information-theoretic measures (Shannon, permutation, sample, approximate, spectral, differential, multiscale) behind one consistent \texttt{compute}/\texttt{rolling}/\texttt{delta} API over pandas and numpy.
-        \item Extracted the library from a trend-detection project where falling Shannon entropy of regional search interest served as an early signal, and hardened it with 14 test suites, CI, and headless-safe plotting.
+        \item Published an open-source Python library that lets analysts apply \textbf{7} entropy measures to time-series data in just a few lines of code
+        \item Turned an early-warning signal from my own trend-detection work into a reusable tool, backed by \textbf{14} test suites and automated testing so others can depend on it
     \end{highlights}
 }
 \end{tabularx}
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{bigfiles} & \hfill May 2026 \\ [1pt]
 \multicolumn{2}{@{}X@{}}{
-    \textit{Personal Project; 136 downloads, 8 stars on crates.io}
+    \textit{Personal Project; 186 downloads, 14 stars on crates.io}
     \begin{highlights}
-        \item Built a parallel disk scanner in Rust on the \texttt{ignore} walker with a 4-stage dupe pipeline (size → inode → partial/full BLAKE3) and a persistent hash cache, taking warm re-scans from 0.45s to 0.011s.
-        \item Shipped a 4-subcommand CLI and a \texttt{ratatui} TUI with filter, trash-by-default delete, and dupes-for-subtree, distributed as prebuilt Linux/macOS/Windows binaries.
+        \item Built a Rust tool that shows what's filling up your disk and finds duplicate files, with repeat scans about \textbf{40x} faster (\textbf{0.45s} to \textbf{0.011s}) thanks to caching
+        \item Made cleanup safe with an interactive terminal app that sends files to the trash instead of deleting them, shipped ready to run on Linux, macOS and Windows
     \end{highlights}
 }
 \end{tabularx}
